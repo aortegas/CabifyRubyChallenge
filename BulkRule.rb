@@ -30,16 +30,18 @@ class BulkRule < Rule
 			totalPriceForProduct = totalItems * itemPrice
 
 		else
+			totalPriceForProduct = totalItems * @newPrice
+
 			# Calculate items with discount
-			groupsItemsWithDiscount = totalItems / @buyingItems
-			calculateWithDiscount = groupsItemsWithDiscount * (@newPrice * @buyingItems)
+			#groupsItemsWithDiscount = totalItems / @buyingItems
+			#calculateWithDiscount = groupsItemsWithDiscount * (@newPrice * @buyingItems)
 
 			# Calculate items without discount
-			itemsWithoutDiscount = totalItems % @buyingItems
-			calculateWithoutDiscount = itemsWithoutDiscount * itemPrice
+			#itemsWithoutDiscount = totalItems % @buyingItems
+			#calculateWithoutDiscount = itemsWithoutDiscount * itemPrice
 
 			# Calculate total price for the product
-			totalPriceForProduct = calculateWithDiscount + calculateWithoutDiscount
+			#totalPriceForProduct = calculateWithDiscount + calculateWithoutDiscount
 		end
 
 		return totalPriceForProduct
