@@ -1,0 +1,18 @@
+[
+	{
+		"code": "VOUCHER",
+		"type": "FreeForBuyRule",
+		"data": {
+			"freeItems": 2,
+			"buyItems": 1
+		}
+	},
+	{
+		"code": "TSHIRT",
+		"type": "BulkRule",
+		"data": {
+			"newPrice": 19.00,
+			"buyingItems": 3
+		}
+	}
+]
